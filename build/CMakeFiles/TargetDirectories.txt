@@ -1,5 +1,6 @@
-C:/Users/leone/Desktop/Pi Pico/PiPico_NRF24/build/CMakeFiles/blink.dir
+C:/Users/leone/Desktop/Pi Pico/PiPico_NRF24/build/CMakeFiles/PiPico_NRF24.dir
 C:/Users/leone/Desktop/Pi Pico/PiPico_NRF24/build/CMakeFiles/ELF2UF2Build.dir
+C:/Users/leone/Desktop/Pi Pico/PiPico_NRF24/build/CMakeFiles/nrf24_pico.dir
 C:/Users/leone/Desktop/Pi Pico/PiPico_NRF24/build/CMakeFiles/edit_cache.dir
 C:/Users/leone/Desktop/Pi Pico/PiPico_NRF24/build/CMakeFiles/rebuild_cache.dir
 C:/Users/leone/Desktop/Pi Pico/PiPico_NRF24/build/pico-sdk/CMakeFiles/edit_cache.dir
