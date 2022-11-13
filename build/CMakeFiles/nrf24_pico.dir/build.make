@@ -715,6 +715,20 @@ CMakeFiles/nrf24_pico.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_spi
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/nrf24_pico.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.s"
 	C:\VSARM\armcc\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_spi\spi.c -o CMakeFiles\nrf24_pico.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_spi\spi.c.s
 
+CMakeFiles/nrf24_pico.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj: CMakeFiles/nrf24_pico.dir/flags.make
+CMakeFiles/nrf24_pico.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c
+CMakeFiles/nrf24_pico.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj: CMakeFiles/nrf24_pico.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\leone\Desktop\Pi Pico\PiPico_NRF24\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/nrf24_pico.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj"
+	C:\VSARM\armcc\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/nrf24_pico.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj -MF CMakeFiles\nrf24_pico.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_pio\pio.c.obj.d -o CMakeFiles\nrf24_pico.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_pio\pio.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_pio\pio.c
+
+CMakeFiles/nrf24_pico.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/nrf24_pico.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i"
+	C:\VSARM\armcc\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_pio\pio.c > CMakeFiles\nrf24_pico.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_pio\pio.c.i
+
+CMakeFiles/nrf24_pico.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/nrf24_pico.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s"
+	C:\VSARM\armcc\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_pio\pio.c -o CMakeFiles\nrf24_pico.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_pio\pio.c.s
+
 # Object files for target nrf24_pico
 nrf24_pico_OBJECTS = \
 "CMakeFiles/nrf24_pico.dir/nrf24l01.c.obj" \
@@ -763,7 +777,8 @@ nrf24_pico_OBJECTS = \
 "CMakeFiles/nrf24_pico.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj" \
 "CMakeFiles/nrf24_pico.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj" \
 "CMakeFiles/nrf24_pico.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj" \
-"CMakeFiles/nrf24_pico.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj"
+"CMakeFiles/nrf24_pico.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj" \
+"CMakeFiles/nrf24_pico.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj"
 
 # External object files for target nrf24_pico
 nrf24_pico_EXTERNAL_OBJECTS =
@@ -815,9 +830,10 @@ libnrf24_pico.a: CMakeFiles/nrf24_pico.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_co
 libnrf24_pico.a: CMakeFiles/nrf24_pico.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 libnrf24_pico.a: CMakeFiles/nrf24_pico.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 libnrf24_pico.a: CMakeFiles/nrf24_pico.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+libnrf24_pico.a: CMakeFiles/nrf24_pico.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
 libnrf24_pico.a: CMakeFiles/nrf24_pico.dir/build.make
 libnrf24_pico.a: CMakeFiles/nrf24_pico.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\leone\Desktop\Pi Pico\PiPico_NRF24\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_48) "Linking CXX static library libnrf24_pico.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\leone\Desktop\Pi Pico\PiPico_NRF24\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_49) "Linking CXX static library libnrf24_pico.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\nrf24_pico.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\nrf24_pico.dir\link.txt --verbose=$(VERBOSE)
 

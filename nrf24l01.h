@@ -12,6 +12,8 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "pico/stdlib.h"
+#include "hardware/spi.h"
+#include <stdio.h>
 
 /* Exported types ------------------------------------------------------------*/
 //------ POWER GAIN ------//
@@ -51,13 +53,11 @@ typedef enum {
 //------ MODULE PARAMETERS ------//
 typedef struct {
 //Hardware settings:
-GPIO_TypeDef *CSN_port;
-uint16_t CSN_pin;
-GPIO_TypeDef *CE_port;
-uint16_t CE_pin;
-GPIO_TypeDef *IRQ_port;
-uint16_t IRQ_pin;
-SPI_HandleTypeDef *hSPIx;
+
+uint CSN_pin;
+uint CE_pin;
+uint IRQ_pin;
+spi_inst_t *hSPIx;
 
 //Module settings:
 PaLevel pa;

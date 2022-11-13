@@ -15,6 +15,8 @@ pico_sdk_init()
 # Tell CMake where to find the executable source file
 add_executable(${PROJECT_NAME} 
     main.c
+    nrf24l01.h
+    nrf24l01.c
 )
 # Create map/bin/hex/uf2 files
 pico_add_extra_outputs(${PROJECT_NAME})
@@ -23,15 +25,11 @@ pico_add_extra_outputs(${PROJECT_NAME})
 target_link_libraries(${PROJECT_NAME} 
     pico_stdlib
     hardware_spi
+    hardware_adc
+    hardware_gpio
+    hardware_pio
 )
 
 # Enable usb output, disable uart output
 pico_enable_stdio_usb(${PROJECT_NAME} 1)
 pico_enable_stdio_uart(${PROJECT_NAME} 0)
-
-#NRF24 Library
-add_library(nrf24_pico nrf24l01.h nrf24l01.c)
-
-target_link_libraries(nrf24_pico pico_stdlib hardware_spi)
-
-target_include_directories(nrf24_pico PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")

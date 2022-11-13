@@ -116,6 +116,8 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_flash/include"
   "C:/VSARM/sdk/pico/pico-sdk/src/common/pico_usb_reset_interface/include"
   "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_spi/include"
+  "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_adc/include"
+  "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/include"
   )
 
 # The set of dependency files which are needed:
@@ -147,11 +149,13 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/VSARM/sdk/pico/pico-sdk/src/common/pico_util/datetime.c" "CMakeFiles/PiPico_NRF24.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/datetime.c.obj" "gcc" "CMakeFiles/PiPico_NRF24.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/datetime.c.obj.d"
   "C:/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c" "CMakeFiles/PiPico_NRF24.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj" "gcc" "CMakeFiles/PiPico_NRF24.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj.d"
   "C:/VSARM/sdk/pico/pico-sdk/src/common/pico_util/queue.c" "CMakeFiles/PiPico_NRF24.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/queue.c.obj" "gcc" "CMakeFiles/PiPico_NRF24.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/queue.c.obj.d"
+  "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c" "CMakeFiles/PiPico_NRF24.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj" "gcc" "CMakeFiles/PiPico_NRF24.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj.d"
   "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c" "CMakeFiles/PiPico_NRF24.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj" "gcc" "CMakeFiles/PiPico_NRF24.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj.d"
   "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c" "CMakeFiles/PiPico_NRF24.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj" "gcc" "CMakeFiles/PiPico_NRF24.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj.d"
   "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c" "CMakeFiles/PiPico_NRF24.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj" "gcc" "CMakeFiles/PiPico_NRF24.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj.d"
   "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c" "CMakeFiles/PiPico_NRF24.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj" "gcc" "CMakeFiles/PiPico_NRF24.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj.d"
   "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c" "CMakeFiles/PiPico_NRF24.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj" "gcc" "CMakeFiles/PiPico_NRF24.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj.d"
+  "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c" "CMakeFiles/PiPico_NRF24.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj" "gcc" "CMakeFiles/PiPico_NRF24.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj.d"
   "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c" "CMakeFiles/PiPico_NRF24.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj" "gcc" "CMakeFiles/PiPico_NRF24.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj.d"
   "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c" "CMakeFiles/PiPico_NRF24.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj" "gcc" "CMakeFiles/PiPico_NRF24.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj.d"
   "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c" "CMakeFiles/PiPico_NRF24.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj" "gcc" "CMakeFiles/PiPico_NRF24.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj.d"
@@ -178,6 +182,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c" "CMakeFiles/PiPico_NRF24.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj" "gcc" "CMakeFiles/PiPico_NRF24.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj.d"
   "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c" "CMakeFiles/PiPico_NRF24.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj" "gcc" "CMakeFiles/PiPico_NRF24.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj.d"
   "C:/Users/leone/Desktop/Pi Pico/PiPico_NRF24/main.c" "CMakeFiles/PiPico_NRF24.dir/main.c.obj" "gcc" "CMakeFiles/PiPico_NRF24.dir/main.c.obj.d"
+  "C:/Users/leone/Desktop/Pi Pico/PiPico_NRF24/nrf24l01.c" "CMakeFiles/PiPico_NRF24.dir/nrf24l01.c.obj" "gcc" "CMakeFiles/PiPico_NRF24.dir/nrf24l01.c.obj.d"
   "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp" "CMakeFiles/PiPico_NRF24.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj" "gcc" "CMakeFiles/PiPico_NRF24.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj.d"
   )
 

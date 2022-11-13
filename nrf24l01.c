@@ -8,6 +8,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "nrf24l01.h"
+#include "hardware/pio.h"
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private defines -----------------------------------------------------------*/
@@ -30,7 +31,6 @@ static void nrf24_reset(nrf24 *node, uint8_t reg);
 /* Exported functions --------------------------------------------------------*/
 void nrf24_init(nrf24 *node) {
 	nrf24_CE_disable(node);	//disable the chip before configure the device
-
 	nrf24_writeReg(node, CONFIG, 0);  			//No IRQ, no CRC
 	node->crc = no_CRC;
 	nrf24_writeReg(node, EN_AA, 0x00); 			//No auto ACK
@@ -218,7 +218,7 @@ uint8_t nrf24_Transmit(nrf24 *node, uint8_t *data, uint8_t len) {
 	uint8_t timeout = 0;
 	while (timeout++ < 10) {
 		for (int i = 0; i < 200; ++i) {
-			__ASM("NOP");
+			pio_encode_nop();
 		}
 		uint8_t fifostatus = nrf24_readReg(node, FIFO_STATUS);
 
@@ -310,12 +310,12 @@ void nrf24_Receive(nrf24 *node, uint8_t *data, uint8_t len) {
     while(spi_is_busy(node->hSPIx) == 1)
 	//while (HAL_SPI_GetState(node->hSPIx) != HAL_SPI_STATE_READY);     cambio
 	//Receive the payload
-    spi_write_blocking(node->hSPIx, data, len);
+    spi_read_blocking(node->hSPIx,0x0, data, len);
 	//HAL_SPI_Receive(node->hSPIx, data, len, NRF_RX_TIMEOUT);          cambio
     while(spi_is_busy(node->hSPIx) == 1)
 	//while (HAL_SPI_GetState(node->hSPIx) != HAL_SPI_STATE_READY);     
 	nrf24_CSN_disable(node);	//Unselect the device
-	HAL_Delay(1);
+	sleep_ms(1);
 
 	cmdtosend = FLUSH_RX;
 	nrf_sendCmd(node, cmdtosend);
@@ -406,7 +406,7 @@ static uint8_t nrf24_readReg(nrf24 *node, uint8_t reg) {
 	//HAL_SPI_Transmit(node->hSPIx, &reg, 1, NRF_TX_TIMEOUT);       cambio
     while(spi_is_busy(node->hSPIx) == 1);
 	//while (HAL_SPI_GetState(node->hSPIx) != HAL_SPI_STATE_READY);     cambio
-    dspi_read_blocking(node->hSPIx, 0, &data, 1);
+    spi_read_blocking(node->hSPIx, 0, &data, 1);
 	//HAL_SPI_Receive(node->hSPIx, &data, 1, NRF_RX_TIMEOUT);       cambio
 	nrf24_CSN_disable(node);
 	return data;
