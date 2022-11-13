@@ -5,18 +5,18 @@ cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
   "C:/VSARM/sdk/pico/pico-sdk/tools/elf2uf2"
-  "C:/Users/leone/Desktop/Pi Pico/PiPico_NRF24/build/elf2uf2"
-  "C:/Users/leone/Desktop/Pi Pico/PiPico_NRF24/build/elf2uf2"
-  "C:/Users/leone/Desktop/Pi Pico/PiPico_NRF24/build/elf2uf2/tmp"
-  "C:/Users/leone/Desktop/Pi Pico/PiPico_NRF24/build/elf2uf2/src/ELF2UF2Build-stamp"
-  "C:/Users/leone/Desktop/Pi Pico/PiPico_NRF24/build/elf2uf2/src"
-  "C:/Users/leone/Desktop/Pi Pico/PiPico_NRF24/build/elf2uf2/src/ELF2UF2Build-stamp"
+  "C:/Users/leone/Desktop/Pi Pico/PiPico_NRF24_RX/build/elf2uf2"
+  "C:/Users/leone/Desktop/Pi Pico/PiPico_NRF24_RX/build/elf2uf2"
+  "C:/Users/leone/Desktop/Pi Pico/PiPico_NRF24_RX/build/elf2uf2/tmp"
+  "C:/Users/leone/Desktop/Pi Pico/PiPico_NRF24_RX/build/elf2uf2/src/ELF2UF2Build-stamp"
+  "C:/Users/leone/Desktop/Pi Pico/PiPico_NRF24_RX/build/elf2uf2/src"
+  "C:/Users/leone/Desktop/Pi Pico/PiPico_NRF24_RX/build/elf2uf2/src/ELF2UF2Build-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "C:/Users/leone/Desktop/Pi Pico/PiPico_NRF24/build/elf2uf2/src/ELF2UF2Build-stamp/${subDir}")
+    file(MAKE_DIRECTORY "C:/Users/leone/Desktop/Pi Pico/PiPico_NRF24_RX/build/elf2uf2/src/ELF2UF2Build-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "C:/Users/leone/Desktop/Pi Pico/PiPico_NRF24/build/elf2uf2/src/ELF2UF2Build-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "C:/Users/leone/Desktop/Pi Pico/PiPico_NRF24_RX/build/elf2uf2/src/ELF2UF2Build-stamp${cfgdir}") # cfgdir has leading slash
 endif()
